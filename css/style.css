@@ -1,0 +1,368 @@
+/* GLOBAL */
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    color: #000;
+}
+
+html {
+    height: 100%;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    padding-left: 202px;
+    padding-right: 202px;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+.site-header {
+    margin-bottom: 30px;
+}
+
+.header-top {
+    padding-top: 17px;
+    padding-bottom: 16px;
+    background-color: #e5e5e5;
+}
+
+.sitenav {
+    display: flex;
+}
+
+.sitenav-item {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sitenav-items:not(:last-child) {
+    margin-right: 30px;
+}
+
+.sitenav-items-link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.41px;
+    color: #333;
+}
+
+.middle-header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #efefef;
+}
+
+.middle-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 80px;
+    height: 80px;
+}
+
+.logo-text {
+    text-decoration: none;
+    color: #66C05D;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42.19px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.middle-header-info {
+    display: flex;
+    align-items: center;
+}
+
+.middle-header-number {
+    font-size: 16px;
+    line-height: 18.75px;
+    margin-right: 40px;
+}
+
+.middle-header-link {
+    text-decoration: none;
+    padding: 13px 27px;
+    border: 2px solid #66C05D;
+    border-radius: 40px;
+    color: #000;
+    transition: 0.3s;
+}
+
+.middle-header-link:hover {
+    color: #fff;
+    background-color: #66C05D;
+}
+
+.header-bottom {
+    padding-top: 30px;
+}
+
+.header-bottom-sitenav {
+    display: flex;
+}
+
+.header-bottom-item {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-bottom-items:not(:last-child) {
+    margin-right: 40px;
+}
+
+.header-bottom-items-link {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 18.75px;
+    color: #000;
+}
+
+.kreslo {
+    margin: 0;
+    padding: 0;
+    height: 604px;
+    background-image: url("../img/kreslo-bg.png");
+}
+
+.left-info {
+    color: #fff;
+    padding-top: 192px;
+    width: 308px;
+}
+
+.left-info-heading {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56.25px;
+    margin-bottom: 50px;
+}
+
+.left-info-title {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 50px;
+}
+
+.left-info-button {
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 15px 37px;
+    border-radius: 40px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.left-info-button:hover {
+    color: #66C05D;
+    background-color: #fff;
+}
+
+.special-offers {
+    padding-top: 80px;
+    background-color: #efefef;
+}
+
+.special-offers-heading {
+    margin-bottom: 38px;
+}
+
+.special-offers-list {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
+}
+
+.special-offers-items {
+    width: 255px;
+    text-align: center;
+    padding: 25px 30px;
+    background-color: #fff;
+}
+
+.special-offers-items:not(:last-child) {
+    margin-right: 30px;
+}
+
+.special-offers-img {
+    width: 125px;
+    height: 166px;
+}
+
+.special-offers-text {
+    color: #333;
+    line-height: 19.69px;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.special-offers-items-heading {
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.special-offers-button {
+    border: 2px solid #66C05D;
+    text-decoration: none;
+    color: #fff;
+    padding: 9px 40px;
+    background-color: #66C05D;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.special-offers-button:hover {
+    color: #66C05D;
+    background-color: #fff;
+}
+
+.envelopes {
+    display: flex;
+    list-style: none;
+    padding-bottom: 132px;
+}
+
+.envelopes-items {
+    width: 540px;
+    background-color: #66C05D;
+    padding: 35px 45px 35px 40px;
+}
+
+.envelopes-items:not(:last-child) {
+    margin-right: 30px;
+}
+
+.envelopes-items-1 {
+    display: flex;
+    align-items: center;
+}
+
+.envelopes-items-heading {
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.envelopes-items-text {
+    width: 231px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 19.69px;
+    margin-bottom: 25px;
+}
+
+.envelopes-items-text-2 {
+    width: 141px;
+    margin-bottom: 35px;
+}
+
+.envelopes-input {
+    border: none;
+    padding: 9px 104px 9px 25px;
+    border-radius: 30px;
+}
+
+.envelopes-button {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    line-height: 16.41px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 9px 29px;
+    transition: 0.3s;
+}
+
+.envelopes-button:hover {
+    color: #66C05D;
+    background-color: #fff;
+}
+
+/* FOOTER */
+.footer-content-container {
+    background-color: #fff;
+    padding-top: 37px;
+    padding-bottom: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons-img {
+    margin-right: 20px;
+}
+
+icons-img-1 {
+    margin-left: 20px;
+}
+
+.icons-img-2 {
+    margin-left: 20px;
+}
+
+.icons-img-3 {
+    margin-left: 20px;
+}
+
+.footer-bottom-content {
+    background-color: #efefef;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.footer-bottom-content p {
+    text-align: center;
+    font-size: 12px;
+    color: #828282;
+}
